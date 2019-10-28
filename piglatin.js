@@ -1,9 +1,11 @@
 function translatePigLatin(str) {
   let vowelText = "way";
   let vowel = /[aeiou]/gi;
-  let firstLetter = str[0]
+  let firstLetter = str[0];
 
-  if (firstLetter.match(vowel)) {
+  if (!str.match(vowel)) {
+    str = str + "ay";
+  } else if (firstLetter.match(vowel)) {
     str = str.concat(vowelText);
   } else {
     vowelIndex = str.indexOf(str.match(vowel)[0]);
