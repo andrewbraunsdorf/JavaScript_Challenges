@@ -10,7 +10,8 @@ function uniteUnique(arr) {
     i++
   }
 
-  
+  console.log(...new Set(array));
+  return [...new Set(array)];
 
 
 }
