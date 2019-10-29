@@ -14,6 +14,7 @@ function fearNotLetter(str) {
       return baseString[charInBaseString + i];
     }
   }
+  return;
   console.log(firstChar);
   console.log(charInBaseString);
 
