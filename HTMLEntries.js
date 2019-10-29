@@ -6,19 +6,19 @@ function convertHTML(str) {
   for (let i = 0; i < singleStringChars.length; i++)
   switch(singleStringChars[i]) {
     case "&":
-        singleStringChars[i] = "&amp";
+        singleStringChars[i] = "&amp;";
     break;
     case "<":
-        singleStringChars[i] = "&lt";
+        singleStringChars[i] = "&lt;";
     break;
     case ">":
-        singleStringChars[i]= "&gt";
+        singleStringChars[i]= "&gt;";
     break;
     case "\"":
-        singleStringChars[i]= "&quot";
+        singleStringChars[i]= "&quot;";
     break;
     case "'":
-        singleStringChars[i]= "&apos";
+        singleStringChars[i]= "&apos;";
     break;     
   }
   str = singleStringChars.join("");
