@@ -7,24 +7,34 @@ function smallestCommons(arr) {
   for (let i = min; i <= max; i++) {
     array.push(i);
   }
-  array.sort(function(a,b){
-    return b-a;
-  })
 
-  for (let j = array[0]; ; j+= array[0])
-  {
-    console.log(j);
-    let check = true;
-    for (let k = 0; k < array.length; k++) {
-      if (j % array[k] > 0) {
-        check = false;
-      }
-    }
-    if (check){
-      console.log(j);
-      return j;
+  let leastCommonMultiple = max;
+
+  for (let i = max -1; i >= min; i--){
+    if (leastCommonMultiple % i){
+      leastCommonMultiple += max;
+      i = max;
     }
   }
+  return leastCommonMultiple;
+  // array.sort(function(a,b){
+  //   return b-a;
+  // })
+
+  // for (let j = array[0]; ; j+= array[0])
+  // {
+  //   console.log(j);
+  //   let check = true;
+  //   for (let k = 0; k < array.length; k++) {
+  //     if (j % array[k] > 0) {
+  //       check = false;
+  //     }
+  //   }
+  //   if (check){
+  //     console.log(j);
+  //     return j;
+  //   }
+  // }
 }
 
 
