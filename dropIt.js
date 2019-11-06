@@ -1,6 +1,7 @@
 function dropElements(arr, func) {
   // arr.shift();
-  for (let i = 0; i < arr.length; i++) {
+  let arrlength = arr.length
+  for (let i = 0; i < arrlength; i++) {
     if (func(arr[0])) {
       break;
     } else {
