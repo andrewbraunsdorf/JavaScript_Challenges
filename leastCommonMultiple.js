@@ -11,7 +11,7 @@ function smallestCommons(arr) {
     return b-a;
   })
 
-  for (let j = array[0]; ; j++)
+  for (let j = array[0]; ; j+= array[0])
   {
     console.log(j);
     let check = true;
