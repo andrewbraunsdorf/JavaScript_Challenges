@@ -1,5 +1,5 @@
 function steamrollArray(arr) {
-  let array = arr.flat(3);
+  let array = arr.flat(4);
   console.log(array)
   return array;
 }
